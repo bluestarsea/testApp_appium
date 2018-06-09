@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+
+    <!--底部菜单栏-->
+    <activity name = "Menu">
+
+        <element name = "PersonalCenter">
+            <name>我的</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuPersonalCenter</pathvalue>
+        </element>
+        <element name = "HomePage">
+            <name>首页</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuHomePage</pathvalue>
+        </element>
+        <element name = "CateGory">
+            <name>分类</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_SearchByType</pathvalue>
+        </element>
+        <element name = "ShopCart">
+            <name>购物车</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuShoppingCar</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--个人中心-->
+    <activity name = "PersonalCenter">
+
+        <element name = "登录/注册">
+            <name>登录/注册</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnLogin</pathvalue>
+        </element>
+
+    </activity>
+
+</page>

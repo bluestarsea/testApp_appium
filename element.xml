@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+
+    <!--启动导航-->
+    <activity name = "Guide"><!--activity名称-->
+
+        <element name= "AdvertiseSkip"> <!-- 元素对象 -->
+            <name>skip</name><!-- 元素名称 -->
+            <type>TextView</type><!-- 元素类型 input/button -->
+            <pathtype>ID</pathtype><!-- 获取元素的模式 ID/XPATH/CLASSNAME/NAME-->
+            <pathvalue>com.jiankecom.jiankemall:id/tv_advertise_pass</pathvalue><!-- 元素定位路径 -->
+        </element>
+
+        <element name = "Welcome">
+            <name>welcome</name>
+            <type>ImageView</type>
+            <pathtype>CLASSNAME</pathtype>
+            <pathvalue>android.widget.ImageView</pathvalue>
+        </element>
+
+        <element name = "new_ad_close">
+            <name>close</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_register_other</pathvalue>
+        </element>
+
+        <element name = "new_ad_register">
+            <name>register_now</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_register_now</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--底部菜单栏-->
+    <activity name = "Menu">
+        <element name = "PersonalCenter">
+            <name>我的</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuPersonalCenter</pathvalue>
+        </element>
+
+        <element name = "Index">
+            <name>首页</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuHomePage</pathvalue>
+        </element>
+
+        <element name = "Classification">
+            <name>Classification</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_SearchByType</pathvalue>
+        </element>
+
+        <element name = "ShoppingCart">
+            <name>ShoppingCart</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_menuShoppingCar</pathvalue>
+        </element>
+    </activity>
+
+    <!--个人中心-->
+    <activity name = "PersonalCenter">
+
+        <element name = "Setting">
+            <name>设置</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llSetting</pathvalue>
+        </element>
+		
+        <element name = "News">
+            <name>消息</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlNews</pathvalue>
+        </element>
+
+        <element name = "Login/Register">
+            <name>登录/注册</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnLogin</pathvalue>
+        </element>
+
+        <element name = "UserHead">
+            <name>用户头像</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ivUserHead</pathvalue>
+        </element>
+
+        <element name = "UserName">
+            <name>用户昵称</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvUserName</pathvalue>
+        </element>
+
+        <element name = "MyIntegral">
+            <name>我的积分</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llMyIntegral</pathvalue>
+        </element>
+		
+        <element name = "MyCoupon">
+            <name>我的优惠券</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llMyCoupon</pathvalue>
+        </element>
+		
+        <element name = "MyRedEnvelope">
+            <name>我的红包</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llMyRedEnvelope</pathvalue>
+        </element>
+		
+        <element name = "AllOrder">
+            <name>全部订单</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlAllOrder</pathvalue>
+        </element>
+
+        <element name = "WaitForPay">
+            <name>待付款</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llWaitForPay</pathvalue>
+        </element>
+		
+        <element name = "WaitForSend">
+            <name>待发货</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llWaitForSend</pathvalue>
+        </element>
+		
+        <element name = "WaitForReciever">
+            <name>待收货</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llWaitForReciever</pathvalue>
+        </element>
+		
+        <element name = "WaitForEvaluate">
+            <name>待评价</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llWaitForEvaluate</pathvalue>
+        </element>
+		
+        <element name = "MyCollection">
+            <name>我的收藏</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlMyCollection</pathvalue>
+        </element>
+		
+        <element name = "MyAward">
+            <name>我的奖品</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlMyAward</pathvalue>
+        </element>
+		
+        <element name = "WinRedEnvelope">
+            <name>赢红包</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlWinRedEnvelope</pathvalue>
+        </element>
+		
+        <element name = "ExchangeAward">
+            <name>兑奖中心</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rl_exchange_award</pathvalue>
+        </element>
+		A
+        <element name = "ServiceOnline">
+            <name>在线客服</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlServiceAfterSellOnline</pathvalue>
+        </element>
+
+        <element name = "FeedBack">
+            <name>意见反馈</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlFeedBack</pathvalue>
+        </element>
+		
+        <element name = "FAQ">
+            <name>常见问题</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlFAQ</pathvalue>
+        </element>
+		
+    </activity>
+	
+	<!--设置-->
+    <activity name = "setting">
+	
+        <element name = "Title">
+            <name>设置</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "Menu">
+            <name>Menu</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnMenu</pathvalue>
+        </element>
+		
+        <element name = "MsgPrompt">
+            <name>消息提醒</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlMsgPrompt</pathvalue>
+        </element>
+		
+        <element name = "DisplayHD">
+            <name>显示高清图</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbPic</pathvalue>
+        </element>
+		
+        <element name = "CustomerCall">
+            <name>客服热线</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlCustomerCall</pathvalue>
+        </element>
+		
+        <element name = "VersionUpdate">
+            <name>版本更新</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlVersionUpdate</pathvalue>
+        </element>
+		
+        <element name = "CleanCache">
+            <name>清除缓存</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlCleanCache</pathvalue>
+        </element>
+		
+        <element name = "Cancle">
+            <name>取消</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnCancle</pathvalue>
+        </element>
+		
+        <element name = "Sure">
+            <name>确认</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSure</pathvalue>
+        </element>
+		
+        <element name = "AboutUs">
+            <name>关于我们</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlAboutUs</pathvalue>
+        </element>
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+		
+	</activity>
+	
+	<!--消息盒子-->
+	<activity name = "News">
+
+        <element name = "Title">
+            <name>消息盒子</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "MsgActivity">
+            <name>最新优惠</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_activity</pathvalue>
+        </element>
+		
+        <element name = "MsgTransportHelp">
+            <name>物流助手</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_transport_help</pathvalue>
+        </element>
+		
+        <element name = "MsgHealthHelp">
+            <name>健康资讯</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_health_help</pathvalue>
+        </element>
+		
+        <element name = "MsgIntegral">
+            <name>积分</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_integral</pathvalue>
+        </element>
+		
+        <element name = "MsgAccount">
+            <name>我的账户</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_account</pathvalue>
+        </element>
+		
+        <element name = "MsgSystem">
+            <name>系统消息</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_msg_system</pathvalue>
+        </element>
+		
+        <element name = "Menu">
+            <name>Menu</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnMenu</pathvalue>
+        </element>
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+	
+	</activity>
+	
+    <!--login-->
+    <activity name = "UserLogin">
+
+        <element name = "Title">
+            <name>Title</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+
+        <element name = "LoginName">
+            <name>LoginName</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etLoginName</pathvalue>
+        </element>
+
+        <element name = "PassWord">
+            <name>PassWord</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etLoginPassWord</pathvalue>
+        </element>
+
+        <element name = "Login">
+            <name>立即登录</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnLogin</pathvalue>
+        </element>
+
+        <element name = "register">
+            <name>register</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvNoAccount</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--register-->
+    <activity name = "register">
+
+        <element name = "Title">
+            <name>Title</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+
+        <element name = "Phone">
+            <name>Phone</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etPhone</pathvalue>
+        </element>
+
+        <element name = "VerificationCode">
+            <name>VerificationCode</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnGetVerificationCode</pathvalue>
+        </element>
+
+    </activity>
+	
+	<!--我的账户，用户已登录-->
+	<activity name = "MyAccount">
+	
+        <element name = "Title">
+            <name>我的账户</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "UserHead">
+            <name>头像</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlUserHead</pathvalue>
+        </element>
+		
+        <element name = "BindPhone">
+            <name>账户</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llBindPhone</pathvalue>
+        </element>
+		
+        <element name = "NickName">
+            <name>昵称</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlChangeNickName</pathvalue>
+        </element>
+		
+        <element name = "Sex">
+            <name>性别</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlayout_sex</pathvalue>
+        </element>
+		
+        <element name = "Birthday">
+            <name>出生日期</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlayout_birthday</pathvalue>
+        </element>
+		
+        <element name = "RecieverAddress">
+            <name>收货地址</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llRecieverAddress</pathvalue>
+        </element>
+		
+		<!--账号登录，有修改密码项-->
+        <element name = "ChangePassWord">
+            <name>修改密码</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llChangePass</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--修改头像-->
+	<activity name = "ModifyUserHead">
+
+        <element name = "Title">
+            <name>修改头像</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "ChangePic">
+            <name>选择文件</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnChangePic</pathvalue>
+        </element>
+		
+        <element name = "Submit">
+            <name>上传</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSubmit</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--密码校验-->
+	<activity name = "PasswordCheck">
+	
+        <element name = "Title">
+            <name>密码校验</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "InputPassWord">
+            <name>请输入登录密码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/edPassWord</pathvalue>
+        </element>
+		
+        <element name = "ShowPass">
+            <name>密码明文</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ivShowPass</pathvalue>
+        </element>
+		
+        <element name = "Next">
+            <name>下一步</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnNext</pathvalue>
+        </element>
+		
+	</activity>
+	
+    <!--绑定手机-->
+	<activity name = "BindPhone">
+	
+        <element name = "Title">
+            <name>绑定手机</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "InputPhone">
+            <name>请输入手机号码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etPhone</pathvalue>
+        </element>
+		
+        <element name = "GetVerificationCode">
+            <name>获取验证码</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvGetVerificationCode</pathvalue>
+        </element>
+		
+        <element name = "InputVerificationCode">
+            <name>请输入短信验证码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etVerificationCode</pathvalue>
+        </element>
+	
+        <element name = "Submit">
+            <name>确定</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSubmit</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--修改昵称-->
+	<activity name = "ModifyNickName">
+	
+        <element name = "Title">
+            <name>修改昵称</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+
+        <element name = "NewNickName">
+            <name>输入新的昵称</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etNewNickName</pathvalue>
+        </element>
+
+        <element name = "确定">
+            <name>确定</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_sure</pathvalue>
+        </element>		
+
+	</activity>
+	
+	<!--修改性别-->
+	<activity name = "ModifySex">
+	
+        <element name = "Title">
+            <name>修改性别</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+
+        <element name = "Man">
+            <name>男</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/chk_man</pathvalue>
+        </element>
+
+        <element name = "Woman">
+            <name>女</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/chk_woman</pathvalue>
+        </element>		
+
+	</activity>
+	
+	<!--选择出生日期-->
+	<activity name = "Birthday">
+	
+        <element name = "PromptMsg">
+            <name>选择日期</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvPromptMsg</pathvalue>
+        </element>
+		
+        <element name = "Year">
+            <name>year</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>android:id/date_picker_header_year</pathvalue>
+        </element>
+		
+        <element name = "Month">
+            <name>date</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>android:id/date_picker_header_date</pathvalue>
+        </element>
+		
+        <element name = "Prev">
+            <name>Prev</name>
+            <type>ImageButton</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>android:id/prev</pathvalue>
+        </element>
+		
+        <element name = "next">
+            <name>next</name>
+            <type>ImageButton</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>android:id/next</pathvalue>
+        </element>
+		
+        <element name = "Date">
+            <name>具体日期</name>
+            <type>view.View</type>
+            <pathtype>name</pathtype>
+            <pathvalue>1/2/3...</pathvalue>
+        </element>
+		
+        <element name = "Cancle">
+            <name>取消</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnCancle</pathvalue>
+        </element>
+		
+        <element name = "Sure">
+            <name>确定</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSure</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--修改密码-->
+	<activity name = "ModifyPassword">
+	
+        <element name = "Title">
+            <name>修改密码</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+	
+        <element name = "CurrentPass">
+            <name>当前密码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etCurrentPass</pathvalue>
+        </element>
+		
+        <element name = "NewPass">
+            <name>新密码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etNewPass</pathvalue>
+        </element>
+		
+        <element name = "TwicePass">
+            <name>再次输入新密码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etTwicePass</pathvalue>
+        </element>
+		
+        <element name = "PassView">
+            <name>新密码明文</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llLoginPassView</pathvalue>
+        </element>
+		
+        <element name = "TwicePassView">
+            <name>再次新密码明文</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llTwiceLoginPassView</pathvalue>
+        </element>
+	
+        <element name = "Submit">
+            <name>提交</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSubmit</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--收货地址管理，用户已登录-->
+	<activity name = "RecieverAddressManagement">
+	
+        <element name = "Title">
+            <name>收货地址管理</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "NewAddress">
+            <name>新建收货地址</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_add_new_address</pathvalue>
+        </element>
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+		
+		<!--账号已存在收货地址，由于地址数量是可变动的，所以下面的元素默认为选择第一个地址;
+		元素相同的动态元素，暂时没找到具体定位方法。懂得的大神们，请指导，谢谢！！！-->
+		
+        <element name = "DefaultAddress">
+            <name>默认地址</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/iv_address_select</pathvalue>
+        </element>
+
+        <element name = "AddressEdit">
+            <name>编辑</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llayout_address_edit</pathvalue>
+        </element>
+
+        <element name = "AddressDelete">
+            <name>删除</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llayout_address_delete</pathvalue>
+        </element>		
+
+	
+	</activity>
+	
+	<!--新增收货地址-->
+	<activity name = "AddAddress">
+	
+        <element name = "Title">
+            <name>新增收货地址</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "Receiver">
+            <name>收货人</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_receiver</pathvalue>
+        </element>
+		
+        <element name = "Phone">
+            <name>手机号</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_phone</pathvalue>
+        </element>
+		
+        <element name = "ChoiceContactPeople">
+            <name>选联系人</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llayout_choice_contact_people</pathvalue>
+        </element>
+		
+        <element name = "AddressRegion">
+            <name>所在地区</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rl_addr_region</pathvalue>
+        </element>
+		
+        <element name = "AddressDetail">
+            <name>详细地址</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_address_detail</pathvalue>
+        </element>
+		
+        <element name = "Ok">
+            <name>保存</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_ok</pathvalue>
+        </element>
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--编辑收货地址-->
+	<activity name = "EditAddress">
+	
+        <element name = "Title">
+            <name>编辑收货地址</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "Delete">
+            <name>删除</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMenu</pathvalue>
+        </element>	
+		
+		<!--删除确认弹窗-->		
+        <element name = "Cancle">
+            <name>取消</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnCancle</pathvalue>
+        </element>	
+		
+        <element name = "Sure">
+            <name>确认</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSure</pathvalue>
+        </element>	
+		
+
+        <element name = "Receiver">
+            <name>收货人</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_receiver</pathvalue>
+        </element>
+		
+        <element name = "Phone">
+            <name>手机号</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_phone</pathvalue>
+        </element>
+		
+        <element name = "ChoiceContactPeople">
+            <name>选联系人</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llayout_choice_contact_people</pathvalue>
+        </element>
+		
+        <element name = "AddressRegion">
+            <name>所在地区</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rl_addr_region</pathvalue>
+        </element>
+		
+        <element name = "AddressDetail">
+            <name>详细地址</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/et_address_detail</pathvalue>
+        </element>
+		
+        <element name = "Ok">
+            <name>保存</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_ok</pathvalue>
+        </element>
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--我的积分，用户已登录-->
+	<activity name = "MyIntegral">
+	
+        <element name = "Title">
+            <name>我的积分</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+	
+        <element name = "MyIntegralScore">
+            <name>积分分数</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMyIntegral</pathvalue>
+        </element>
+		
+        <element name = "Rule">
+            <name>规则</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMenu</pathvalue>
+        </element>
+		
+        <element name = "IntegralMall">
+            <name>积分商城</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llIntegralMall</pathvalue>
+        </element>
+		
+        <element name = "EarnIntegral">
+            <name>赚取积分</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/llEarnIntegral</pathvalue>
+        </element>
+		
+        <element name = "MyIntegralDetial">
+            <name>积分明细</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlMyIntegralDetial</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--积分商城-->
+	<activity name = "IntegralMall">
+	
+        <element name = "Title">
+            <name>积分商城</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "CanUseIntegral">
+            <name>可用积分</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlCanUseIntegral</pathvalue>
+        </element>
+		
+        <element name = "Rule">
+            <name>规则</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMenu</pathvalue>
+        </element>
+		
+		<!--立即兑换，id定位默认选择第一个;多个相同元素，暂未独立定位成功-->
+        <element name = "Exchange">
+            <name>立即兑换</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ivBtnExchange</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--积分明细-->
+	<activity name = "MyIntegralDetial">
+	
+        <element name = "IntetralGet">
+            <name>积分收入</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnIntetralGet</pathvalue>
+        </element>
+		
+        <element name = "IntetralPay">
+            <name>积分支出</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnIntetralPay</pathvalue>
+        </element>
+
+	
+	</activity>
+	
+	<!--我的优惠券，用户已登录-->
+	<activity name = "MyCoupon">
+	
+        <element name = "Title">
+            <name>我的优惠券</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "UnUsedCoupon">
+            <name>可用优惠券</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvUnUsedCoupon</pathvalue>
+        </element>
+		
+        <element name = "HistoricalCoupon">
+            <name>历史优惠券</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvHistoricalCoupon</pathvalue>
+        </element>
+		
+        <element name = "UseRule">
+            <name>使用规则</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMenu</pathvalue>
+        </element>
+		
+        <element name = "NoData">
+            <name>去首页看看</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnNoData</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--我的红包，用户已登录-->
+	<activity name = "MyRedEnvelope">
+	
+        <element name = "Title">
+            <name>我的红包</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "GetRedEnvelope">
+            <name>去赚红包吧</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_get_red_envelope</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--全部订单，用户已登录-->
+	<activity name = "AllOrder">
+	
+        <element name = "Title">
+            <name>全部订单</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "TabName1">
+            <name>全部</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_tab_name1</pathvalue>
+        </element>
+		
+        <element name = "TabName2">
+            <name>待付款</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_tab_name2</pathvalue>
+        </element>
+		
+        <element name = "TabName3">
+            <name>待发货</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_tab_name3</pathvalue>
+        </element>
+		
+        <element name = "TabName4">
+            <name>待收货</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_tab_name4</pathvalue>
+        </element>
+		
+        <element name = "TabName5">
+            <name>待评价</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tv_tab_name5</pathvalue>
+        </element>
+		
+        <element name = "NoData">
+            <name>去逛逛</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnNoData</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--我的收藏，用户已登录-->
+	<activity name = "MyCollection">
+	
+        <element name = "Title">
+            <name>我的收藏</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+
+        <!--默认选择第一个购物车图标按钮，相同动态元素 单独定位方法还在摸索中-->
+        <element name = "AddShoppingCar">
+            <name>加入购物车</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnAddShoppingCar</pathvalue>
+        </element>
+		
+        <element name = "NoData">
+            <name>去首页看看</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnNoData</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--我的奖品，用户已登录-->
+	<activity name = "MyAward">
+	
+        <element name = "Title">
+            <name>我的奖品</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "GoLuckDraw">
+            <name>去抽奖</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_action</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--赢红包，用户已登录-->
+	<activity name = "WinRedEnvelope">
+	
+        <element name = "Title">
+            <name>赢红包</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "ActivityRules">
+            <name>活动规则</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnRule</pathvalue>
+        </element>
+		
+        <element name = "SharePacket">
+            <name>分享app赢红包</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_share_packet</pathvalue>
+        </element>
+		
+        <element name = "GetShareCode">
+            <name>输入邀请码赢红包</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/ll_get_share_packet</pathvalue>
+        </element>
+		
+        <element name = "RedPacketAmount">
+            <name>您已获得XXX元红包</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rl_red_packet_amount</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--兑奖中心，用户已登录-->
+	<activity name = "ExchangeAward">
+	
+        <element name = "Title">
+            <name>兑奖中心</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "AwardingRules">
+            <name>兑换规则</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvMenu</pathvalue>
+        </element>
+		
+        <element name = "InputRedemptionCode">
+            <name>输入兑换码</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etxt_input_redemption_code</pathvalue>
+        </element>
+		
+        <element name = "SureExchange">
+            <name>确认兑换</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btn_sure_exchange</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--意见反馈类型选择-->
+	<activity name = "FeedBackTypeSelection">
+	
+        <element name = "Title">
+            <name>意见反馈</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "FunctionSelect">
+            <name>功能建议</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlFunctionSelect</pathvalue>
+        </element>
+		
+        <element name = "OrderSelect">
+            <name>订单物流问题</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlOrderSelect</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--意见反馈-->
+	<activity name = "FeedBack">
+
+        <element name = "Title">
+            <name>意见反馈</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "FeedBackType">
+            <name>反馈类型</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/rlFeedBackType</pathvalue>
+        </element>
+		
+        <element name = "FunctionContent">
+            <name>反馈内容</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etFunctionContent</pathvalue>
+        </element>
+		
+        <element name = "Contact">
+            <name>联系方式</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/etContact</pathvalue>
+        </element>
+		
+        <element name = "Faq">
+            <name>查看帮助中心</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvFaq</pathvalue>
+        </element>
+
+        <element name = "Submit">
+            <name>确定</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSubmit</pathvalue>
+        </element>	
+
+        <!--提交成功后的返回弹窗-->
+        <element name = "GoBack">
+            <name>返回</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnGoBack</pathvalue>
+        </element>	
+		
+        <element name = "Back">
+            <name>Back</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>	
+			
+	</activity>
+	
+	<!--关于我们-->
+	<activity name = "AboutUs">
+	
+        <element name = "Title">
+            <name>关于我们</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "健客简介">
+            <name>健客简介</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客简介"</pathvalue>
+        </element>
+		
+        <element name = "健客品质">
+            <name>健客品质</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客品质"</pathvalue>
+        </element>
+		
+        <element name = "健客新闻">
+            <name>健客新闻</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客新闻"</pathvalue>
+        </element>
+		
+        <element name = "健客文化">
+            <name>健客文化</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客文化"</pathvalue>
+        </element>
+		
+        <element name = "健客风采">
+            <name>健客风采</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客风采"</pathvalue>
+        </element>
+		
+        <element name = "健客大事记">
+            <name>健客大事记</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"健客大事记"</pathvalue>
+        </element>
+		
+        <element name = "联系我们">
+            <name>联系我们</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"联系我们"</pathvalue>
+        </element>
+	
+	</activity>
+
+	<!--消息提醒设置-->
+	<activity name = "MsgPrompt">
+	
+        <element name = "Title">
+            <name>消息提醒设置</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "物流助手">
+            <name>物流助手</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbOrderSend</pathvalue>
+        </element>
+	
+        <element name = "买药提醒">
+            <name>买药提醒</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbBuyTip</pathvalue>
+        </element>
+		
+        <element name = "最新优惠">
+            <name>最新优惠</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbMallActivity</pathvalue>
+        </element>
+		
+        <element name = "积分">
+            <name>积分</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbIntegral</pathvalue>
+        </element>
+		
+        <element name = "健康资讯">
+            <name>健康资讯</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbHealthHelp</pathvalue>
+        </element>
+		
+        <element name = "系统通知">
+            <name>系统通知</name>
+            <type>CheckBox</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/cbSystem</pathvalue>
+        </element>
+	
+	</activity>
+	
+	<!--常见问题-->
+	<activity name = "FQA">
+	
+        <element name = "Title">
+            <name>常见问题</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/tvTitle</pathvalue>
+        </element>
+		
+        <element name = "ContactOnlineCustomerService">
+            <name>联系在线客服</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"联系在线客服"</pathvalue>
+        </element>
+	
+        <element name = "CallOfficialService">
+            <name>拨打官方服务电话</name>
+            <type>view.View</type>
+            <pathtype>AccessibilityId</pathtype>
+            <pathvalue>u"拨打官方服务电话 400-6666-800"</pathvalue>
+        </element>
+	
+	</activity>
+
+    <!--共享元素-->
+    <activity name = "SharedElements">
+
+        <element name = "Back">
+            <name>后退</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnBack</pathvalue>
+        </element>
+
+        <element name = "Menu">
+            <name>Menu</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnMenu</pathvalue>
+        </element>
+
+        <element name = "NoData">
+            <name>NoData</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnNoData</pathvalue>
+        </element>
+
+    </activity>
+	
+    <!--所有的弹出框、加载-->
+    <activity name="Alert">
+
+        <element name="cancel">
+            <name>取消</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnCancle</pathvalue>
+        </element>
+
+        <element name="Sure">
+            <name>确定</name>
+            <type>Button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>com.jiankecom.jiankemall:id/btnSure</pathvalue>
+        </element>
+
+        <element name="loading">
+            <name>Loading</name>
+            <type>ProgressBar</type>
+            <pathtype>CLASSNAME</pathtype>
+            <pathvalue>android.widget.ProgressBar</pathvalue>
+        </element>
+
+    </activity>
+
+</page>
